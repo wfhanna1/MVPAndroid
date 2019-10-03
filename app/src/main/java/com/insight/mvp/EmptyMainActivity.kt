@@ -5,18 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 
-
-
 class EmptyMainActivity : AppCompatActivity() {
 
-    val LOGIN_ACTIVITY = 13
+    private val LOGIN_ACTIVITY = 13
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val activityIntent: Intent
 
-        val isLoggedIn: Boolean = false;
+        val isLoggedIn = false
+
         // go straight to main if a token is stored
         if (isLoggedIn) {
             activityIntent = Intent(this, MainActivity::class.java)
@@ -25,7 +24,6 @@ class EmptyMainActivity : AppCompatActivity() {
             activityIntent = Intent(this, LoginActivity::class.java)
             startActivityForResult(activityIntent, LOGIN_ACTIVITY)
         }
-        //finish()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
