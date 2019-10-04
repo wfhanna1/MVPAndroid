@@ -14,8 +14,7 @@ class EmptyMainActivity : AppCompatActivity() {
 
         val activityIntent: Intent
 
-        val isLoggedIn = false
-
+        val isLoggedIn = true
         // go straight to main if a token is stored
         if (isLoggedIn) {
             activityIntent = Intent(this, MainActivity::class.java)
