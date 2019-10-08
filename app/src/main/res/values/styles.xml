@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorSecondary</item>
 
         <!-- New MaterialComponents attributes. -->
         <!--<item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>-->
@@ -46,6 +46,15 @@
     <style name="DiamondFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+
+    <style name="CardViewTest" parent="">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
 </resources>

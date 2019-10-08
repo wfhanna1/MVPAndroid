@@ -3,9 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<item-->
-        <!--android:id="@+id/app_bar_search"-->
-        <!--android:icon="@drawable/baseline_search_white_24"-->
-        <!--android:title="@string/action_search"-->
-        <!--app:showAsAction="ifRoom"/>-->
+    <item
+            android:id="@+id/app_profile"
+            android:icon="@drawable/round_person_white_24dp"
+            android:title="@string/action_profile"
+            app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/baseline_search_white_24"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/app_more_vert"
+            android:icon="@drawable/round_more_vert_white_24dp"
+            android:title="@string/action_vertical"
+            app:showAsAction="ifRoom"/>
+
 </menu>
